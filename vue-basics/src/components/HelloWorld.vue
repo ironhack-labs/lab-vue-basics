@@ -1,6 +1,10 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h2>
+      Likes <span class="heart-likes" @click="likes++">💚</span>
+      <span> {{ likes }}</span>
+    </h2>
   </div>
 </template>
 
@@ -11,6 +15,11 @@ export default defineComponent({
   name: "HelloWorld",
   props: {
     msg: String,
+  },
+  data() {
+    return {
+      likes: 0,
+    };
   },
 });
 </script>
@@ -30,5 +39,12 @@ li {
 }
 a {
   color: #42b983;
+}
+.heart-likes {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 </style>
