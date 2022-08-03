@@ -5,6 +5,11 @@
       Likes <span class="heart-likes" @click="likes++">💚</span>
       <span> {{ likes }}</span>
     </h2>
+
+    <div v-if="likes >= 10">🥳 We are getting a lot of likes🎉</div>
+    <br />
+    <div v-if="likes >= 30">😍 Wow! This project is growing really fast!🚀</div>
+    <br />
   </div>
 </template>
 
