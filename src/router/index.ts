@@ -2,6 +2,7 @@ import PostsViewVue from "@/views/PostsView.vue";
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ChangeBackgroundColorView from "../views/ChangeBackgroundColorView.vue";
+import ComputedPropertiesView from "../views/ComputedView.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -18,6 +19,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/colors",
     name: "colors",
     component: ChangeBackgroundColorView,
+  },
+  {
+    path: "/computed",
+    name: "computed",
+    component: ComputedPropertiesView,
   },
   {
     path: "/about",

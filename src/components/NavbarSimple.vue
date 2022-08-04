@@ -3,6 +3,7 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/posts">Posts</router-link> |
     <router-link to="/colors">Colors</router-link> |
+    <router-link to="/computed">Computed</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
 </template>
