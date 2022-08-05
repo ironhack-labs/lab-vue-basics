@@ -62,9 +62,7 @@ async function getRandomPosts() {
 }
 
 onMounted(async () => {
-  let postResponse = await getRandomPosts().catch(() => []);
-  console.log(postResponse);
-  posts.value = postResponse;
+  posts.value = await getRandomPosts().catch(() => []);
 });
 </script>
 
