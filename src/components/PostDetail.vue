@@ -31,14 +31,14 @@ let post = ref<Post>({});
 let paramPostId = route.params.id;
 
 function goBack() {
-  if (paramPostId > 0) {
-    loadPostDetails(paramPostId--);
+  if (paramPostId > 1) {
+    loadPostDetails(--paramPostId);
   } else {
     router.go(-1);
   }
 }
 function nextPost() {
-  loadPostDetails(paramPostId++);
+  loadPostDetails(++paramPostId);
 }
 
 const loadPostDetails = async (postId) => {

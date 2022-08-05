@@ -7,7 +7,7 @@
     />
     <h5 class="post__title">{{ props.post.title }}</h5>
     <div class="post__description">{{ props.post.description }}</div>
-    <div class="post__body">{{ props.post.body.slice(0, 100) + "..." }}</div>
+    <div class="post__body">{{ props.post.body?.slice(0, 100) + "..." }}</div>
   </div>
 </template>
 
