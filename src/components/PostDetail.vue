@@ -28,25 +28,25 @@ import Post from "../classes/Post";
 
 const route = useRoute();
 let post = ref<Post>({});
-let paramPostId = route.params.id;
+let paramPostId = Number.parseInt(
+  Array.isArray(route.params.id) ? route.params.id[0] : route.params.id
+);
 
 function goBack() {
-  if (paramPostId > 1) {
-    loadPostDetails(--paramPostId);
-  } else {
-    router.go(-1);
-  }
+  router.go(-1);
+  loadPostDetails(--paramPostId);
 }
 function nextPost() {
-  loadPostDetails(++paramPostId);
+  router.push({ path: `/posts/detail/${++paramPostId}` });
+  loadPostDetails(paramPostId);
 }
 
-const loadPostDetails = async (postId) => {
-  // const postId = parseInt()
+const loadPostDetails = async (postId: number) => {
   const postContent = await getPostById(postId);
   if (postContent) {
     post.value.title = postContent.title;
     post.value.description = postContent.description;
+    post.value.coverDescription = postContent.coverDescription;
     post.value.body = postContent.body;
     post.value.cover = postContent.cover;
     return postContent;

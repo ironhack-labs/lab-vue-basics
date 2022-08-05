@@ -57,17 +57,9 @@ async function getTenPost() {
 async function getRandomPosts() {
   const posts = await getTenPost();
   if (posts && posts.length > 0) {
-    // shuffleArray(posts);
     return posts;
   }
 }
-
-// function shuffleArray(array: Array) {
-//   for (let i = array.length - 1; i > 0; i--) {
-//     const j = Math.floor(Math.random() * (i + 1));
-//     [array[i], array[j]] = [array[j], array[i]];
-//   }
-// }
 
 onMounted(async () => {
   let postResponse = await getRandomPosts().catch(() => []);
