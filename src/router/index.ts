@@ -3,12 +3,18 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ChangeBackgroundColorView from "../views/ChangeBackgroundColorView.vue";
 import ComputedPropertiesView from "../views/ComputedView.vue";
+import PostDetailVue from "@/components/PostDetail.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
     component: HomeView,
+  },
+  {
+    path: "/posts/detail/:id",
+    name: "posts-detail",
+    component: PostDetailVue,
   },
   {
     path: "/posts",

@@ -4,7 +4,6 @@
       class="post__image"
       :src="props.post.cover"
       :alt="props.post.coverDescription"
-      @click="showFullPost"
     />
     <h5 class="post__title">{{ props.post.title }}</h5>
     <div class="post__description">{{ props.post.description }}</div>
@@ -14,12 +13,13 @@
 
 <script setup lang="ts">
 const props = defineProps(["post"]);
-let showFullPost = () => {
-  console.log("loadPost");
-};
 </script>
 
 <style scoped>
+.post {
+  padding: 1.5rem;
+}
+
 .post__image {
   width: 100%;
   width: 22rem;

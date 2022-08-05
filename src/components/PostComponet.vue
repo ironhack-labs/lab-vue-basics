@@ -7,20 +7,18 @@
         :post="post"
         v-for="post in posts"
         :key="post.id"
-        @click="showFullPost"
+        @click="navigateToFullPost(post.id)"
       />
     </div>
-    <PostDetail :post="posts[0]" />
   </div>
 </template>
 
 <script setup lang="ts">
+import router from "@/router";
 import PostCard from "./PostCard.vue";
-import PostDetail from "./PostDetail.vue";
 
-const showFullPost = (event: Event) => {
-  console.log(event.currentTarget);
-  console.log("post id = " + event.currentTarget.dataset.post);
+const navigateToFullPost = (id: number) => {
+  router.push({ path: `/posts/detail/${id}` });
 };
 
 const posts = [
@@ -62,10 +60,9 @@ const posts = [
 
 <style scoped>
 .posts {
-  margin: 4rem 2rem 4rem 2rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 .post__post__image {
   position: relative;
