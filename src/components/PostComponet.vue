@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Recent Projects</h1>
+    <h1>Recent Projects ({{ numberOfPosts }})</h1>
 
     <div class="posts">
       <PostCard
@@ -16,13 +16,17 @@
 <script setup lang="ts">
 // import { ref } from "vue";
 import router from "@/router";
-import { onMounted, ref } from "@vue/runtime-core";
+import { onMounted, ref, computed } from "@vue/runtime-core";
 import PostCard from "./PostCard.vue";
 let posts = ref([]);
 
 const navigateToFullPost = (id: number) => {
   router.push({ path: `/posts/detail/${id}` });
 };
+
+const numberOfPosts = computed(() => {
+  return parseInt(posts.value.length);
+});
 
 const GRAPHQL_POST_API_BASE_URL =
   "https://mockend.com/droidsam1/ironhack-mid-term-project-mockend/graphql?";
