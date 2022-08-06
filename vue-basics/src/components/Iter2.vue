@@ -2,10 +2,6 @@
     <div>
         <h1>Iteration 2. Sum result = {{ 2 + 2 }}</h1>
         <h2>{{onCompute}}</h2>
-        <div>
-            <button @click="toggleSpan">Toggle span</button>
-            <span v-if="showSpan">I'm a SPAN</span>
-        </div>
     </div>
 </template>
 
@@ -19,11 +15,6 @@ export default {
   computed:{
     onCompute(){
         return "From onCompute() function";
-    }
-  },
-  methods:{
-    toggleSpan(){
-        this.showSpan = !this.showSpan;
     }
   }
 }
