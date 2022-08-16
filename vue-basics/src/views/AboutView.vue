@@ -1,20 +1,20 @@
 <template>
   <div class="about">
-    <Navbar/>
+    <NavBar/>
     <h1>This is an about page</h1>
-    <Footer/>
+    <FooTer/>
   </div>
 </template>
 
 <script>
-import Navbar from '../components/Navbar-comp.vue';
-import Footer from '../components/Footer-comp.vue';
+import NavBar from '@/components/NavBar.vue';
+import FooTer from '@/components/FooTer.vue';
 
 export default {
   name: 'AboutView',
   components: {
-    Navbar,
-    Footer,
+    NavBar,
+    FooTer,
   },
 };
 </script>
