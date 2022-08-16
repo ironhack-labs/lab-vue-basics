@@ -7,17 +7,6 @@
       <p>{{maths}}</p>
       <button @click="showMath"> Click here to reveal the answer </button>
     </section>
-    <section>
-      <h2>Iteration 3</h2>
-      <p>It is {{statementIsTrue}} that I love ice cream.</p>
-      <label>
-        <input type="checkbox" v-model="statementIsTrue"/>
-        Check out the Boolean function
-      </label>
-    </section>
-    <section>
-      <h2>Iteration 4</h2>
-    </section>
   </div>
 </template>
 
@@ -34,7 +23,7 @@ export default {
   },
   methods: {
     showMath() {
-      this.maths = 'Here we go... the solution is 4';
+      this.maths = 'Here we go... the solution is 4. Now proceed to the About-page.';
     },
   },
   name: 'HomeView',
