@@ -12,12 +12,12 @@
             <a href="#">Contact Us</a>
         </li>
     </ul>
-</div>  
+</div>
 </template>
 
 <script>
 export default {
-  name: 'Footer',
+  name: 'MainFooter',
   props: {
     msg: String,
   },
