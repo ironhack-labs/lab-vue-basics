@@ -1,7 +1,7 @@
 <template>
   <Navbar />
-  <Footer />
   <PostList />
+  <Footer />
 </template>
 
 <script>
