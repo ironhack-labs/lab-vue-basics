@@ -1,9 +1,9 @@
 <template>
     <footer>
-        The footer {{ 2 + 2 }}
+        The footer <span v-if="showNumber">{{ 2 + 2 }}</span>
     </footer>
 </template>
 
 <script setup>
-    console.log('Oh, the footer')
+    const showNumber = false;
 </script>
