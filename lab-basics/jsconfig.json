@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "noUnusedLocals": false,
+    "jsx": "preserve",
     "target": "es5",
     "module": "esnext",
     "baseUrl": "./",

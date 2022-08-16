@@ -1,6 +1,6 @@
 <template>
     <footer>
-        The footer
+        The footer {{ 2 + 2 }}
     </footer>
 </template>
 

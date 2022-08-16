@@ -1,9 +1,9 @@
+<script setup>
+    const printString = () => 'Oh, The Navbar';
+</script>
+
 <template>
     <nav>
-        The nav
+        {{ printString() }}
     </nav>
 </template>
-
-<script setup>
-    console.log('Oh, the nav');
-</script>
