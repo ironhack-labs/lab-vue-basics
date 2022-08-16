@@ -3,8 +3,19 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
+  <NavbarPage/>
   <router-view/>
+  <FooterSection/>
 </template>
+
+<script>
+import NavbarPage from '@/components/NavbarPage.vue';
+import FooterSection from '@/components/FooterSection.vue';
+
+export default ({
+  components: { NavbarPage, FooterSection },
+});
+</script>
 
 <style>
 #app {
