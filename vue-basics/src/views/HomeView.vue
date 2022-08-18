@@ -6,6 +6,7 @@
       <h2>Iteration 2</h2>
       <p>{{maths}}</p>
       <button @click="showMath"> Click here to reveal the answer </button>
+      <h2> Rest of the iterations are on the next page -> </h2>
     </section>
   </div>
 </template>
@@ -23,7 +24,7 @@ export default {
   },
   methods: {
     showMath() {
-      this.maths = 'Here we go... the solution is 4. Now proceed to the About-page.';
+      this.maths = 'Here we go... the solution is 4.';
     },
   },
   name: 'HomeView',
