@@ -1,9 +1,3 @@
-<template>
-  <Navbar />
-  <PostList />
-  <Footer />
-</template>
-
 <script>
 import Navbar from './components/TheNavbar.vue';
 import Footer from './components/TheFooter.vue';
@@ -18,6 +12,12 @@ export default {
 }
 }
 </script>
+
+<template>
+  <Navbar />
+  <PostList />
+  <Footer />
+</template>
 
 <style>
 #app {
