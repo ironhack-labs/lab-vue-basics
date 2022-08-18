@@ -1,9 +1,10 @@
 <template>
-  <div class="footer">
+  <div class="footerapp">
     <ul>
         <a href=""><li>Sobre nosotros</li></a>
         <a href=""><li>Proyectos</li></a>
         <a href=""><li>Contacto</li></a>
+        <p>Esta web ha sido creada por Pepe</p>
     </ul>
   </div>
 </template>
@@ -15,11 +16,9 @@ export default {
 </script>
 
 <style scoped>
-    menu{
-        display: inline-block;
-        text-align: center;
+    .footerapp{
+      margin-left: -40px;
     }
-
     li{
         list-style: none;
     }

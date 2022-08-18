@@ -1,6 +1,12 @@
 <template>
   <NavBar/>
   <SumOperation/>
+  <StringPrint/>
+  <IfCondition/>
+  <MyPosts/>
+  <ButtonSlot>
+    Click me
+  </ButtonSlot>
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
@@ -13,12 +19,20 @@
 import NavBar from '@/components/NavBar.vue';
 import SumOperation from '@/components/SumOperation.vue';
 import FooterApp from '@/components/FooterApp.vue';
+import StringPrint from '@/components/String.vue';
+import IfCondition from '@/components/IfCondition.vue';
+import MyPosts from '@/components/VLoops.vue';
+import ButtonSlot from '@/components/ButtonSlot.vue';
 
 export default {
   components: {
     NavBar,
     FooterApp,
     SumOperation,
+    StringPrint,
+    IfCondition,
+    MyPosts,
+    ButtonSlot,
   },
 };
 </script>

@@ -15,9 +15,10 @@ export default {
 </script>
 
 <style scoped>
-    menu{
-        display: inline-block;
-        text-align: center;
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        margin-left: -40px;
     }
 
     li{
