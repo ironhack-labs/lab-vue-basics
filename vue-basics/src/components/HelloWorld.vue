@@ -13,12 +13,14 @@ export default {
   },
   data() {
     return {
-      operation: `The result of the operation is ${result}`,
+      operation: `The result of the operation is ${this.result()}`,
     };
   },
   methods: {
     result() {
       const sum = 2 + 2;
+      const result = sum;
+      return result;
     },
   },
 };
