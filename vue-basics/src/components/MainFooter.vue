@@ -32,6 +32,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    padding-top: 60px;
 }
 .footer a {
     text-decoration: none;
