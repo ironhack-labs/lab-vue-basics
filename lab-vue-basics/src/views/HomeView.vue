@@ -4,6 +4,7 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <p> {{2 + 2}} </p>
     <SimpleFunc/>
+    <ThreePosts/>
   </div>
 </template>
 
@@ -11,12 +12,14 @@
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue';
 import SimpleFunc from '@/components/SimpleFunc.vue';
+import ThreePosts from '@/components/ThreePosts.vue';
 
 export default {
   name: 'HomeView',
   components: {
     HelloWorld,
     SimpleFunc,
+    ThreePosts,
   },
 };
 </script>
