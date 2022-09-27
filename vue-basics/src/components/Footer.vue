@@ -11,7 +11,6 @@
 
 <style scoped>
 footer {
-  width: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
