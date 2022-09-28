@@ -19,7 +19,7 @@ import ButtonColors from "./components/ButtonColors.vue";
     </div>
     <Operations />
     <List />
-    <ButtonChangeBackground />
+    <ButtonColors />
     <RouterView />
     <Footer />
   </div>
