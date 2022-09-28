@@ -7,6 +7,7 @@ import Operations from "./components/Operations.vue";
 import HomeView from "./views/HomeView.vue";
 import AboutView from "./views/AboutView.vue";
 import List from "./components/List.vue";
+import ButtonColors from "./components/ButtonColors.vue";
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import List from "./components/List.vue";
     </div>
     <Operations />
     <List />
+    <ButtonChangeBackground />
     <RouterView />
     <Footer />
   </div>

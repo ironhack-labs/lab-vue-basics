@@ -1,4 +1,5 @@
 <template>
+  <!-- Iteration 4 -->
   <div id="iterating-and-displaying-arrays-of-objects">
     <h3>List of main Frontend frameworks</h3>
     <ul class="list">
@@ -27,7 +28,7 @@ const FrontendFrameworks = [
     description:
       "React (also known as React. js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on UI components.",
     content:
-      "React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”",
+      "React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.",
   },
   {
     name: "Vue",
