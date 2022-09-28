@@ -15,6 +15,7 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   background-color: purple;
+  height: 100px;
 }
 
 .logo {
