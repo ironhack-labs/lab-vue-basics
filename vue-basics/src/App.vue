@@ -6,6 +6,7 @@ import Footer from "./components/Footer.vue";
 import Operations from "./components/Operations.vue";
 import HomeView from "./views/HomeView.vue";
 import AboutView from "./views/AboutView.vue";
+import List from "./components/List.vue";
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import AboutView from "./views/AboutView.vue";
       <RouterLink to="/about">About us</RouterLink>
     </div>
     <Operations />
+    <List />
     <RouterView />
     <Footer />
   </div>
