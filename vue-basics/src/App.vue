@@ -3,12 +3,19 @@ import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
 import NavBar from "./components/NavBar.vue";
 import Footer from "./components/Footer.vue";
+import Operations from "./components/Operations.vue";
+import HomeView from "./views/HomeView.vue";
+import AboutView from "./views/AboutView.vue";
 </script>
 
 <template>
   <div>
     <NavBar />
-
+    <div class="routes-style">
+      <RouterLink to="/">Home</RouterLink> |
+      <RouterLink to="/about">About us</RouterLink>
+    </div>
+    <Operations />
     <RouterView />
     <Footer />
   </div>
@@ -49,6 +56,10 @@ nav a {
 
 nav a:first-of-type {
   border: 0;
+}
+.routes-style {
+  padding-top: 1rem;
+  text-align: center;
 }
 
 footer {
