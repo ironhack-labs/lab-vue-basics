@@ -2,7 +2,7 @@
   <div>
     <nav>
       <img class="logo" src="../assets/logo.svg" alt="" />
-      <a href="">Home</a><a href="">About Us</a><a href="">Contact</a>
+      <a href="/">Home</a><a href="/about">About Us</a><a href="">Contact</a>
       <img class="logo" src="../assets/logo.svg" alt="" />
     </nav>
   </div>
@@ -12,7 +12,9 @@
 
 <style scoped>
 .logo {
-  height: 20px;
+  height: 40px;
+  width: 60px;
+  padding: 3px;
 }
 
 nav {

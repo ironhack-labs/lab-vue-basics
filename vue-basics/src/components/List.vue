@@ -4,9 +4,9 @@
     <h3>List of main Frontend frameworks</h3>
     <ul class="list">
       <li v-for="(framework, index) in FrontendFrameworks" v-bind:key="index">
-        {{ index }}. {{ framework.name }} ➯ Description:
-        {{ framework.description }} ➯ Content:
-        {{ framework.content }}
+        <h2>{{ index }}. {{ framework.name }}</h2>
+        <h4>- Description ➯ {{ framework.description }}</h4>
+        <p>- Content ➯ {{ framework.content }}</p>
       </li>
     </ul>
   </div>
