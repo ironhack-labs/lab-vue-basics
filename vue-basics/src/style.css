@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.beer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.beer img {
+    width: 100px;
+}
